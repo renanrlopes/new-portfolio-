@@ -174,6 +174,11 @@ body {
   animation: fadeIn 0.6s ease forwards;
 }
 
+.cv-container h1 {
+  margin-top: -20px; /* valores negativos sobem o elemento */
+}
+
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
