@@ -38,7 +38,7 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.15); /* glow suave roxo */
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.15);
   z-index: 999;
 }
 
@@ -46,7 +46,6 @@ body::before {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: right;
   height: 60px;
   display: flex;
   justify-content: flex-end;
@@ -61,17 +60,27 @@ body::before {
   font-weight: 500;
 }
 
-.navigation li.active {
+/* 🟣 Link normal */
+.navigation li a {
+  text-decoration: none;
+  color: inherit; /* usa a cor do <li> */
+  transition: 0.3s;
+}
+
+/* ✨ Link na aba ativa */
+.navigation li.active a {
   color: #7C3AED;
   text-shadow: 0 0 10px rgba(124, 58, 237, 0.8);
   font-weight: 700;
 }
 
-
-.navigation li:hover {
-  color: #7C3AED; /* roxo neon da paleta */
+/* ⚡ Hover */
+.navigation li:hover,
+.navigation li:hover a {
+  color: #7C3AED;
   text-shadow: 0 0 8px rgba(124, 58, 237, 0.6);
 }
+
 
 /* Para a página não ficar escondida atrás da nav */
 body {
