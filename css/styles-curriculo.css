@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* ===== BODY BASE DARK NEO ===== */
 body {
   background: #0B1020;
   color: #E6EEF8;
@@ -16,7 +15,7 @@ body {
   position: relative;
 }
 
-/* Glow de fundo para profundidade */
+/* Glow de fundo */
 body::before {
   content: "";
   position: fixed;
@@ -60,21 +59,18 @@ body::before {
   font-weight: 500;
 }
 
-/* 🟣 Link normal */
 .navigation li a {
   text-decoration: none;
-  color: inherit; /* usa a cor do <li> */
+  color: inherit; 
   transition: 0.3s;
 }
 
-/* ✨ Link na aba ativa */
 .navigation li.active a {
   color: #7C3AED;
   text-shadow: 0 0 10px rgba(124, 58, 237, 0.8);
   font-weight: 700;
 }
 
-/* ⚡ Hover */
 .navigation li:hover,
 .navigation li:hover a {
   color: #7C3AED;
@@ -82,11 +78,10 @@ body::before {
 }
 
 
-/* Para a página não ficar escondida atrás da nav */
 body {
   padding-top: 80px;
   background: #0B1020;
-  font-family: "Inter", sans-serif; /* (mantenha se já setou no seu projeto) */
+  font-family: "Inter", sans-serif; 
 }
 
 
@@ -133,7 +128,7 @@ body {
   margin-bottom: 14px;
 }
 
-/* ===== LINKS / BOTÕES HEADER ===== */
+/* BOTÕES HEADER */
 .cv-links {
   display: flex;
   gap: 14px;
@@ -172,7 +167,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ===== CONTAINER PRINCIPAL (GLASS DARK) ===== */
+/* CONTAINER PRINCIPAL*/
 .cv-container {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.05);
@@ -193,7 +188,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== TÍTULOS ===== */
+/* TÍTULOS */
 .main h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -209,7 +204,7 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.04);
 }
 
-/* ===== SEÇÕES ===== */
+/*  SEÇÕES  */
 .cv-section-title {
   font-size: 1.4rem;
   color: #7C3AED;
@@ -218,7 +213,7 @@ body {
   text-shadow: 0 0 6px rgba(124,58,237,0.4);
 }
 
-/* ===== ITENS DO CV ===== */
+/*  ITENS DO CV  */
 .cv-item {
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(255,255,255,0.03);
@@ -241,7 +236,9 @@ body {
   color: #E6EEF8;
 }
 
-/* Textos */
+
+
+
 .main h2 {
   font-size: 1.8rem;
   margin-top: 40px;
@@ -264,7 +261,7 @@ body {
   margin-top: 4px;
 }
 
-/* ===== TAGS DE SKILLS ===== */
+/*TAGS DE SKILLS */
 .skills {
   margin-top: 14px;
   display: flex;
@@ -288,7 +285,7 @@ body {
   transform: scale(1.07);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+/* RESPONSIVIDADE  */
 @media (max-width: 930px) {
   .profile-header {
     flex-direction: column;

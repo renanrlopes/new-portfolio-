@@ -22,7 +22,6 @@ body::before {
 }
 
 
-/* ===== NAVIGATION BAR (igual a Home) ===== */
 
 .navigation {
   background-color: #0B1020;
@@ -54,32 +53,28 @@ body::before {
   font-weight: 500;
 }
 
-/* 🟣 Link normal */
 .navigation li a {
   text-decoration: none;
-  color: inherit; /* usa a cor do <li> */
+  color: inherit; 
   transition: 0.3s;
 }
 
-/* ✨ Link na aba ativa */
 .navigation li.active a {
   color: #7C3AED;
   text-shadow: 0 0 10px rgba(124, 58, 237, 0.8);
   font-weight: 700;
 }
 
-/* ⚡ Hover */
 .navigation li:hover,
 .navigation li:hover a {
   color: #7C3AED;
   text-shadow: 0 0 8px rgba(124, 58, 237, 0.6);
 }
 
-/* Para a página não ficar escondida atrás da nav */
 body {
     padding-top: 80px;
     background: #0B1020;
-    font-family: "Inter", sans-serif; /* (mantenha se já setou no seu projeto) */
+    font-family: "Inter", sans-serif; 
 }   
 
 .capa{
@@ -157,7 +152,6 @@ body {
     text-align: center;
   }
 
-  /* Quebra o layout lado a lado → empilha */
   .capa div {
     display: block;
     width: 100%;
